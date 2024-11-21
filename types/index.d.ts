@@ -136,3 +136,19 @@ declare type TransformedImageProps = {
   hasDownload?: boolean;
   setIsTransforming?: React.Dispatch<React.SetStateAction<boolean>>;
 };
+export interface user {
+  clerkId: string;
+  email: string;
+  username: string;
+  firstName: string | null;
+  lastName: string | null;
+  photo: string;
+}
+export interface users {
+  clerkId: string;
+  email: string;
+  username: string;
+  firstName: string | null;
+  lastName: string | null;
+  photo: string;
+}
