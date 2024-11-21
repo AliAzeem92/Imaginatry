@@ -93,7 +93,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ message: "OK", user: updatedUser });
   }
 
-  // DELETE
+  // DELETE users
   if (eventType === "user.deleted") {
     const { id } = evt.data;
 
