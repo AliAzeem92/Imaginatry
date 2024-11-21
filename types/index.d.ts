@@ -5,8 +5,8 @@ declare type CreateUserParams = {
   clerkId: string;
   email: string;
   username: string;
-  firstName: string;
-  lastName: string;
+  firstName: string | null;
+  lastName: string | null;
   photo: string;
 };
 
@@ -137,14 +137,6 @@ declare type TransformedImageProps = {
   setIsTransforming?: React.Dispatch<React.SetStateAction<boolean>>;
 };
 export interface user {
-  clerkId: string;
-  email: string;
-  username: string;
-  firstName: string | null;
-  lastName: string | null;
-  photo: string;
-}
-export interface users {
   clerkId: string;
   email: string;
   username: string;
